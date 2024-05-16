@@ -1,0 +1,24 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: Course-Management-Service
+  data:
+    mongodb:
+      uri: 
+      auto-index-creation: true
+  cloud:
+    azure:
+      storage:
+        blob:
+          connection-string: 
+  servlet:
+    multipart:
+      max-file-size: 15MB
+      max-request-size: 15MB
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

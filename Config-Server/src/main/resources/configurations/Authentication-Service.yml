@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: Authentication-Service
+  data:
+    mongodb:
+      uri: 
+      auto-index-creation: true
+
+server:
+  port: 8082
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
