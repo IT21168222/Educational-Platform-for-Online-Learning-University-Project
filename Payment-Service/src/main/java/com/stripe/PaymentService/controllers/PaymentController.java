@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin
 public class PaymentController {
 
-    String STRIPE_API_KEY = "sk_test_51PE8x1LMktVF5ZUlnMqjMGolvipIAFxVzSKtQntg12p6cMP7LLpcIbBdBJBkjj24c75jASi1rUB1pL2XuRrGbFgv00chCwbda2";
+    String STRIPE_API_KEY = "API_KEY";
 
     @PostMapping("/checkout/hosted")
     String hostedCheckout(@RequestBody RequestDTO requestDTO) throws StripeException {
